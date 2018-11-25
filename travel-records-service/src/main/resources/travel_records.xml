@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataset>
+    <travel_record id="001" from_city="milan" to_city="rome" arrival="2010-10-11" departure="2010-10-10"/>
+    <travel_record id="002" from_city="milan" to_city="lasvegas" arrival="2010-10-11" departure="2010-10-10"/>
+    <travel_record id="003" from_city="lasvegas" to_city="madrid" arrival="2010-10-11" departure="2010-10-10"/>
+    <travel_record id="004" from_city="madrid" to_city="bolognia" arrival="2010-10-11" departure="2010-10-10"/>
+    <travel_record id="005" from_city="rome" to_city="sanfrancisco" arrival="2010-10-11" departure="2010-10-10"/>
+    <travel_record id="006" from_city="sanfrancisco" to_city="madrid" arrival="2010-10-11" departure="2010-10-10"/>
+    <travel_record id="007" from_city="bolognia" to_city="durres" arrival="2010-10-11" departure="2010-10-10"/>
+    <travel_record id="008" from_city="durres" to_city="tirana" arrival="2010-10-11" departure="2010-10-10"/>
+    <travel_record id="009" from_city="madrid" to_city="tirana" arrival="2010-10-20" departure="2010-10-10"/>
+</dataset>

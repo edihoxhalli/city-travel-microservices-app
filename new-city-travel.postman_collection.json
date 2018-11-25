@@ -1,0 +1,191 @@
+{
+	"info": {
+		"_postman_id": "8ade7d79-d573-4ca0-bf13-6c6ff66bc2ec",
+		"name": "new-city-travel",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "getAllTravelRecords",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "localhost:8001/travel-record/all",
+					"host": [
+						"localhost"
+					],
+					"port": "8001",
+					"path": [
+						"travel-record",
+						"all"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "createTravelRecord",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"fromCity\" : \"milan\",\n\t\"toCity\" : \"rome\",\n\t\"arrival\": \"2010-10-10 10:10\",\n\t\"departure\":\"2010-10-10 10:10\"\n}"
+				},
+				"url": {
+					"raw": "localhost:8001/travel-record",
+					"host": [
+						"localhost"
+					],
+					"port": "8001",
+					"path": [
+						"travel-record"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "createTravelRecord-bulk",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "[\n\t{\n\t\t\"fromCity\" : \"milan\",\n\t\t\"toCity\" : \"rome\",\n\t\t\"arrival\": \"2010-10-11 10:10\",\n\t\t\"departure\":\"2010-10-10 10:10\"\n\t},\n\t{\n\t\t\"fromCity\" : \"rome\",\n\t\t\"toCity\" : \"madrid\",\n\t\t\"arrival\": \"2010-10-11 10:10\",\n\t\t\"departure\":\"2010-10-10 10:10\"\n\t}, \n\t{\n\t\t\"fromCity\" : \"rome\",\n\t\t\"toCity\" : \"lasvegas\",\n\t\t\"arrival\": \"2010-10-11 10:10\",\n\t\t\"departure\":\"2010-10-10 10:10\"\n\t},\n\t{\n\t\t\"fromCity\" : \"lasvegas\",\n\t\t\"toCity\" : \"tirana\",\n\t\t\"arrival\": \"2010-10-25 10:10\",\n\t\t\"departure\":\"2010-10-10 10:10\"\n\t},\n\t{\n\t\t\"fromCity\" : \"madrid\",\n\t\t\"toCity\" : \"berlin\",\n\t\t\"arrival\": \"2010-10-11 10:10\",\n\t\t\"departure\":\"2010-10-10 10:10\"\n\t},\n\t{\n\t\t\"fromCity\" : \"berlin\",\n\t\t\"toCity\" : \"tirana\",\n\t\t\"arrival\": \"2010-10-11 10:10\",\n\t\t\"departure\":\"2010-10-10 10:10\"\n\t}\n]"
+				},
+				"url": {
+					"raw": "localhost:8001/travel-record/bulk",
+					"host": [
+						"localhost"
+					],
+					"port": "8001",
+					"path": [
+						"travel-record",
+						"bulk"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getTravelRecordById",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "localhost:8001/travel-record/3",
+					"host": [
+						"localhost"
+					],
+					"port": "8001",
+					"path": [
+						"travel-record",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "deleteTravelRecordById",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "localhost:8001/travel-record/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8001",
+					"path": [
+						"travel-record",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "calcShortestConnections",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "localhost:8002/travel-calc/path-in-connections/from/milan/to/tirana",
+					"host": [
+						"localhost"
+					],
+					"port": "8002",
+					"path": [
+						"travel-calc",
+						"path-in-connections",
+						"from",
+						"milan",
+						"to",
+						"tirana"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "calcShortestTime",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "localhost:8002/travel-calc/path-in-time/from/milan/to/tirana",
+					"host": [
+						"localhost"
+					],
+					"port": "8002",
+					"path": [
+						"travel-calc",
+						"path-in-time",
+						"from",
+						"milan",
+						"to",
+						"tirana"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
